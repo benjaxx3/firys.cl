@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Firys | Repuestos y Piezas de Desgaste Industrial</title>
+  <meta name="description" content="Firys fabrica y suministra repuestos de chancado, piezas de desgaste y corazas para molino con aleaciones de alto rendimiento." />
+  <meta name="keywords" content="Firys, revestimiento de chancado, piezas de desgaste, corazas para molino, repuestos aridos" />
+  <meta name="author" content="Firys" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Firys | Repuestos y Piezas de Desgaste Industrial" />
+  <meta property="og:description" content="Aleaciones tecnicamente superiores para chancado, molienda y desgaste industrial." />
+  <meta property="og:url" content="https://firys.com/" />
+  <meta property="og:image" content="https://firys.com/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Firys | Repuestos y Piezas de Desgaste Industrial" />
+  <meta name="twitter:description" content="Fabricacion de repuestos para plantas de aridos, molinos y equipos de desgaste." />
+  <link rel="canonical" href="https://firys.com/" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+
+  <script>
+    tailwind = {
+      config: {
+        theme: {
+          extend: {
+            fontFamily: {
+              display: ["Sora", "sans-serif"],
+              body: ["Manrope", "sans-serif"]
+            },
+            colors: {
+              firys: {
+                50: "#e7f5f9",
+                100: "#cdebf3",
+                200: "#9fd7e6",
+                300: "#69bdd2",
+                400: "#2f99b2",
+                500: "#015272",
+                600: "#014966",
+                700: "#013f58",
+                800: "#01364b",
+                900: "#012d3f"
+              },
+              firysGold: {
+                300: "#ffd56d",
+                400: "#ffc94f",
+                500: "#FFC137",
+                600: "#e2ab31"
+              }
+            },
+            boxShadow: {
+              glow: "0 12px 32px rgba(1, 82, 114, 0.22)"
+            }
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-white text-slate-900 font-body antialiased">
+  <div class="noise-bg fixed inset-0 -z-20"></div>
+  <div class="pointer-events-none fixed inset-0 -z-10">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+  </div>
+
+  <header class="sticky top-0 z-40 border-b border-slate-200 bg-white/95 backdrop-blur">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-5 py-3 md:px-8">
+      <a href="#inicio" class="navbar-logo">
+        <img src="img/LOGO.avif" alt="Logo Firys" class="h-14 w-auto md:h-16" />
+      </a>
+      <ul id="menu" class="hidden items-center gap-1 rounded-full border border-firys-100 bg-gradient-to-r from-white to-firys-50/40 px-2 py-2 text-sm font-semibold shadow-md md:flex">
+        <li><a class="rounded-full px-4 py-2 text-slate-800 transition hover:bg-firys-100 hover:text-firys-800" href="#productos">Productos</a></li>
+        <li><a class="rounded-full px-4 py-2 text-slate-800 transition hover:bg-firys-100 hover:text-firys-800" href="#nosotros">Nosotros</a></li>
+        <li><a class="rounded-full px-4 py-2 text-slate-800 transition hover:bg-firys-100 hover:text-firys-800" href="#clientes">Clientes</a></li>
+        <li><a class="rounded-full px-4 py-2 text-slate-800 transition hover:bg-firys-100 hover:text-firys-800" href="#contacto">Contacto</a></li>
+      </ul>
+      <a href="#contacto" class="hidden rounded-full bg-firys-500 px-5 py-2.5 text-sm font-semibold text-white shadow-glow transition hover:bg-firys-600 md:inline-flex">
+        Cotizar
+      </a>
+      <button id="menu-toggle" class="rounded-md border border-slate-300 p-2 text-slate-700 md:hidden" aria-label="Abrir menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="hidden border-t border-slate-200 bg-white md:hidden">
+      <ul class="space-y-1 px-5 py-4 text-sm font-medium">
+        <li><a class="block rounded px-3 py-2 hover:bg-slate-100" href="#productos">Productos</a></li>
+        <li><a class="block rounded px-3 py-2 hover:bg-slate-100" href="#nosotros">Nosotros</a></li>
+        <li><a class="block rounded px-3 py-2 hover:bg-slate-100" href="#clientes">Clientes</a></li>
+        <li><a class="block rounded px-3 py-2 hover:bg-slate-100" href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="inicio">
+    <section class="mx-auto max-w-6xl px-5 pb-12 pt-8 md:px-8 md:pt-10">
+      <div class="reveal overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-xl">
+        <div id="hero-carousel" class="relative">
+          <div class="carousel-slide active">
+            <img src="img/carrusel.avif" alt="Carrusel Firys" class="h-[220px] w-full object-cover md:h-[390px]" />
+            <div class="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 p-6 md:p-10">
+              <p class="inline-flex max-w-xl rounded-lg bg-black/35 px-4 py-2 font-display text-base font-semibold tracking-wide text-white md:text-xl">
+                Industrias que mueven al pais
+              </p>
+            </div>
+          </div>
+          <button id="carousel-prev" aria-label="Imagen anterior" class="carousel-nav absolute left-3 top-1/2 -translate-y-1/2 rounded-full border border-white/30 bg-black/40 px-3 py-2 text-white hover:bg-black/55">
+            &#10094;
+          </button>
+          <button id="carousel-next" aria-label="Imagen siguiente" class="carousel-nav absolute right-3 top-1/2 -translate-y-1/2 rounded-full border border-white/30 bg-black/40 px-3 py-2 text-white hover:bg-black/55">
+            &#10095;
+          </button>
+          <div id="carousel-dots" class="absolute bottom-4 right-4 flex items-center gap-2">
+            <button class="carousel-dot h-2.5 w-2.5 rounded-full bg-white" aria-label="Ir a imagen 1"></button>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+
+    <section id="productos" class="mx-auto max-w-6xl px-5 pb-20 md:px-8">
+      <div class="mb-8 reveal">
+        <h2 class="font-display text-3xl font-bold text-slate-900 md:text-4xl">Productos</h2>
+        <p class="mt-3 max-w-2xl text-slate-700">
+          Soluciones de desgaste y repuestos industriales para plantas de aridos y procesos de molienda.
+        </p>
+      </div>
+      <div class="grid gap-5 md:grid-cols-3">
+        <article class="reveal overflow-hidden rounded-[26px] border border-slate-200 bg-white shadow-sm">
+          <img src="img/revestimiento%20de%20chancado.avif" alt="Revestimiento de chancado y repuestos de aridos" class="media-rounded h-44 w-full object-cover md:h-48" loading="lazy" />
+          <div class="p-6">
+            <h3 class="font-display text-xl font-semibold text-slate-900">Revestimiento de chancado</h3>
+            <p class="mt-2 text-sm text-slate-700">Repuestos para plantas de aridos.</p>
+            <p class="mt-3 text-sm text-slate-700">Nuestros revestimientos de chancado al manganeso son fabricados con altos estandares en grados de 14%, 18% a 21% de Mn, garantizando:</p>
+            <ul class="mt-3 list-disc space-y-2 pl-5 text-sm text-slate-700">
+              <li>Hasta 20-35% mejor tasa de desgaste que las aleaciones suministradas por los OEM.</li>
+              <li>Confiable y predecible vida de desgaste.</li>
+              <li>Terminaciones precisas, asegurando un correcto montaje y operacion.</li>
+            </ul>
+            <a href="Revestimiento.html" class="mt-5 inline-block rounded-lg bg-firysGold-500 px-4 py-2 text-sm font-semibold text-slate-900 transition hover:bg-firysGold-400">Ver mas</a>
+          </div>
+        </article>
+
+        <article class="reveal overflow-hidden rounded-[26px] border border-slate-200 bg-white shadow-sm">
+          <img src="img/peiza%20de%20desgaste.avif" alt="Piezas de desgaste en aleaciones industriales" class="media-rounded h-44 w-full object-cover md:h-48" loading="lazy" />
+          <div class="p-6">
+            <h3 class="font-display text-xl font-semibold text-slate-900">Piezas de desgaste</h3>
+            <p class="mt-3 text-sm text-slate-700">Variedad de piezas de desgaste en diferentes aleaciones: Alto Cromo, Acero ASTM A27, ASTM A-148, Refractario, Nodular, Fierro Fundido, Inoxidable.</p>
+            <p class="mt-3 text-sm text-slate-700">Tambien fabricamos piezas para rotores de impacto, bombas, corona para trapiches, soleras y llantas, repuestos para rotores tipo Pulvomatic, entre otros.</p>
+            <a href="pieza_desgaste.html" class="mt-5 inline-block rounded-lg bg-firysGold-500 px-4 py-2 text-sm font-semibold text-slate-900 transition hover:bg-firysGold-400">Ver mas</a>
+          </div>
+        </article>
+
+        <article class="reveal overflow-hidden rounded-[26px] border border-slate-200 bg-white shadow-sm">
+          <img src="img/coraza%20de%20molino.avif" alt="Corazas para molino de bolas y barras" class="media-rounded h-44 w-full object-cover md:h-48" loading="lazy" />
+          <div class="p-6">
+            <h3 class="font-display text-xl font-semibold text-slate-900">Corazas para molino</h3>
+            <p class="mt-3 text-sm text-slate-700">Corazas para revestimientos de molinos en Alto Cromo, Manganeso y Cromo Niquel, para molinos de bolas y barras.</p>
+            <a href="coraza_molino.html" class="mt-5 inline-block rounded-lg bg-firysGold-500 px-4 py-2 text-sm font-semibold text-slate-900 transition hover:bg-firysGold-400">Ver mas</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="nosotros" class="mx-auto max-w-6xl px-5 pb-20 md:px-8">
+      <div class="rounded-2xl border border-slate-200 bg-white p-8 md:p-10 shadow-sm">
+        <h2 class="reveal font-display text-3xl font-bold text-slate-900 md:text-4xl">Por que nos prefieren</h2>
+        <div class="mt-7 grid items-center gap-8 md:grid-cols-2">
+          <div class="reveal rounded-[22px] border border-slate-200 p-6">
+            <ul class="space-y-4 text-base font-medium text-slate-800">
+              <li>25 anos de experiencia</li>
+              <li>Controlamos todos los aspectos tecnicos, logisticos y comerciales de las distintas transacciones de suministros.</li>
+              <li>Productos fabricados en un completo rango de aleaciones tecnicamente superiores y a un precio competitivo, permitiendo:</li>
+              <li>Incrementar el rendimiento de su Chancador y Planta.</li>
+            </ul>
+          </div>
+          <img src="img/porque%20nos%20prefieren.avif" alt="Por que nos prefieren" class="reveal media-rounded h-64 w-full border border-slate-200 bg-white object-contain md:h-80" loading="lazy" />
+        </div>
+      </div>
+      <div class="reveal mt-6 rounded-2xl border border-firysGold-600 bg-firysGold-500 px-6 py-7 shadow-sm md:px-8">
+        <div class="grid gap-6 text-slate-900 sm:grid-cols-2 lg:grid-cols-4">
+          <div>
+            <p class="text-3xl font-extrabold">2019</p>
+            <p class="mt-1 text-sm font-semibold">Ano de Establecimiento</p>
+          </div>
+          <div>
+            <p class="text-3xl font-extrabold">65ton</p>
+            <p class="mt-1 text-sm font-semibold">Piezas fundidas entregadas</p>
+          </div>
+          <div>
+            <p class="text-3xl font-extrabold">80%</p>
+            <p class="mt-1 text-sm font-semibold">Porcentaje cumplimiento</p>
+          </div>
+          <div>
+            <p class="text-3xl font-extrabold">350</p>
+            <p class="mt-1 text-sm font-semibold">Total de piezas fabricadas</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="clientes" class="mx-auto max-w-6xl px-5 pb-20 md:px-8">
+      <div class="mb-8 reveal">
+        <h2 class="font-display text-3xl font-bold text-slate-900 md:text-4xl">Clientes</h2>
+        <p class="mt-3 max-w-2xl text-slate-700">
+          Trabajamos junto a operaciones que exigen continuidad, resistencia y respaldo en cada componente.
+        </p>
+      </div>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <img src="img/cliente%201.avif" alt="Cliente Firys 1" class="reveal media-rounded h-32 w-full border border-slate-200 object-cover shadow-sm md:h-36" loading="lazy" />
+        <img src="img/cliente%202.avif" alt="Cliente Firys 2" class="reveal media-rounded h-32 w-full border border-slate-200 object-cover shadow-sm md:h-36" loading="lazy" />
+        <img src="img/cliente%203.avif" alt="Cliente Firys 3" class="reveal media-rounded h-32 w-full border border-slate-200 object-cover shadow-sm md:h-36" loading="lazy" />
+        <img src="img/cliente%204.avif" alt="Cliente Firys 4" class="reveal media-rounded h-32 w-full border border-slate-200 object-cover shadow-sm md:h-36" loading="lazy" />
+        <img src="img/cliente%205.avif" alt="Cliente Firys 5" class="reveal media-rounded h-32 w-full border border-slate-200 object-cover shadow-sm md:h-36" loading="lazy" />
+        <img src="img/cliente%206.avif" alt="Cliente Firys 6" class="reveal media-rounded h-32 w-full border border-slate-200 object-cover shadow-sm md:h-36" loading="lazy" />
+        <img src="img/cliente%207.avif" alt="Cliente Firys 7" class="reveal media-rounded h-32 w-full border border-slate-200 object-cover shadow-sm md:h-36" loading="lazy" />
+      </div>
+    </section>
+
+
+    <!-- NUEVA SECCION DE INFORMACION DE CONTACTO -->
+    <section id="contacto" class="mx-auto max-w-6xl px-5 pb-24 md:px-8">
+      <div class="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm md:p-10">
+        <h2 class="font-display text-3xl font-bold text-slate-900 md:text-4xl">Contacto e informacion comercial</h2>
+
+        <div class="mt-8 grid gap-6 md:grid-cols-2">
+          <div class="rounded-2xl border border-slate-200 p-6">
+            <h3 class="font-display text-xl font-semibold text-slate-900">Empleos</h3>
+            <p class="mt-3 text-slate-700">
+              Para aplicar a un trabajo en ©FIRYS, envia tu CV y carta de recomendacion a:
+            </p>
+            <a href="mailto:ventas@firys.cl" class="mt-4 inline-block text-firys-600 font-semibold hover:underline">
+              ventas@firys.cl
+            </a>
+          </div>
+
+          <div class="rounded-2xl border border-slate-200 p-6">
+            <h3 class="font-display text-xl font-semibold text-slate-900">Correo y telefonos</h3>
+            <p class="mt-3 text-slate-700">
+              <strong>Correo:</strong>
+              <a href="mailto:ventas@firys.cl" class="text-firys-600 hover:underline">ventas@firys.cl</a>
+            </p>
+            <p class="mt-3 text-slate-700">
+              <strong>Telefonos:</strong>
+              <a href="tel:+56931919150" class="text-firys-600 hover:underline">+56 9 31919150</a>
+            </p>
+          </div>
+
+          <div class="rounded-2xl border border-slate-200 p-6">
+            <h3 class="font-display text-xl font-semibold text-slate-900">Direccion Comercial</h3>
+            <p class="mt-3 text-slate-700">
+              Los Ciruelos Poniente 9199,<br />
+              La Florida<br />
+              Santiago, Chile.
+            </p>
+          </div>
+
+          <div class="rounded-2xl border border-slate-200 p-6">
+            <h3 class="font-display text-xl font-semibold text-slate-900">Preguntas</h3>
+            <p class="mt-3 text-slate-700">
+              Para todo tipo de preguntas, comentarios e inquietudes; por favor llamanos:
+              <a href="tel:+56931919150" class="text-firys-600 font-semibold hover:underline">+56 9 31919150</a>
+              o completa el formulario de contacto.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="md:col-span-2 rounded-2xl border border-slate-200 p-6 shadow-sm">
+  
+  <h3 class="font-display text-xl font-semibold text-slate-900 mb-4">Ubicación</h3>
+  <div class="overflow-hidden rounded-2xl border border-slate-200">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1662.8198278800503!2d-70.54814771969039!3d-33.53675327786268!2m3!1f0!2f0!3f0!2m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d146766d70bf%3A0xdeb377b4b37b5b2b!2sLos%20Ciruelos%20Pte.%209199%2C%208290792%20La%20Florida%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1sen!2scl!4v1773709397899!5m2!1sen!2scl"
+      width="100%"
+      height="380"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</div>
+  </main>
+
+  <footer class="border-t border-slate-200 py-8">
+    <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-5 text-sm text-slate-700 md:flex-row md:px-8">
+      <p>&copy; <span id="year"></span> Firys. Todos los derechos reservados.</p>
+      <p>Hecho con HTML5, Tailwind y JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

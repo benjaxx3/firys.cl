@@ -1,0 +1,91 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 93.75%;
+}
+
+.navbar-logo {
+  position: relative;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 18px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  box-shadow: none;
+}
+
+.media-rounded {
+  border-radius: 22px;
+}
+
+.noise-bg {
+  background-image:
+    radial-gradient(circle at 12% 18%, rgba(1, 82, 114, 0.12), transparent 33%),
+    radial-gradient(circle at 88% 12%, rgba(255, 193, 55, 0.15), transparent 30%),
+    linear-gradient(160deg, #ffffff 0%, #fbfdff 45%, #f6fbff 100%);
+}
+
+.orb {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(60px);
+  opacity: 0.35;
+  animation: float 7s ease-in-out infinite;
+}
+
+.orb-1 {
+  width: 260px;
+  height: 260px;
+  top: 8%;
+  left: 4%;
+  background: #015272;
+}
+
+.orb-2 {
+  width: 340px;
+  height: 340px;
+  right: 8%;
+  bottom: 10%;
+  background: #ffc137;
+  animation-delay: 1.3s;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.carousel-slide {
+  display: none;
+  position: relative;
+}
+
+.carousel-slide.active {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  .navbar-logo {
+    margin-top: -6px;
+    margin-bottom: -6px;
+    padding: 0;
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
