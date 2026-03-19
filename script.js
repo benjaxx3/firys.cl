@@ -141,3 +141,48 @@ if ("IntersectionObserver" in window && revealItems.length) {
 } else {
   revealItems.forEach((item) => item.classList.add("is-visible"));
 }
+const slides = document.querySelectorAll(".carousel-slide");
+const nextBtn = document.getElementById("carousel-next");
+const prevBtn = document.getElementById("carousel-prev");
+const dotsContainer = document.getElementById("carousel-dots");
+
+let current = 0;
+
+// mostrar slide
+function showSlide(index) {
+  slides.forEach((slide) => slide.classList.remove("active"));
+  slides[index].classList.add("active");
+}
+
+// siguiente
+function nextSlide() {
+  current = (current + 1) % slides.length;
+  showSlide(current);
+}
+
+// anterior
+function prevSlide() {
+  current = (current - 1 + slides.length) % slides.length;
+  showSlide(current);
+}
+
+// botones
+nextBtn.addEventListener("click", nextSlide);
+prevBtn.addEventListener("click", prevSlide);
+
+// autoplay
+setInterval(nextSlide, 5000);
+
+// dots
+slides.forEach((_, index) => {
+  const dot = document.createElement("button");
+
+  dot.classList.add("h-2.5", "w-2.5", "rounded-full", "bg-white", "opacity-50");
+
+  dot.addEventListener("click", () => {
+    current = index;
+    showSlide(current);
+  });
+
+  dotsContainer.appendChild(dot);
+});
