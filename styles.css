@@ -89,3 +89,12 @@ html {
     transform: translateY(-14px);
   }
 }
+.carousel-slide {
+  display: none;
+  position: absolute;
+  inset: 0;
+}
+
+.carousel-slide.active {
+  display: block;
+}
